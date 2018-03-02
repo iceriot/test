@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="python,链表,数据结构," />
 
 
 
@@ -79,13 +79,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="线性表，链表线性表：一个集合中的所有元素存在着某种顺序关系，这些元素以及元素的顺序关系构成了线性表。线性表的实现：  能够找到首元素。 从任意元素出发可以找到后继元素。  链  表：链表是线性表的一种实现。  链表每个元素存储在独立的存储块当中，称之为结点。 每个结点都有唯一的标识，称之为结点链接。 结点和结点之间通过结点链接维持顺序关系（前一个结点可以通过链接找到后一个结点）。  单向链表单向链">
+<meta name="keywords" content="python,链表,数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linklist">
+<meta property="og:url" content="http://yoursite.com/2018/03/02/linklist/index.html">
 <meta property="og:site_name" content="hexo">
+<meta property="og:description" content="线性表，链表线性表：一个集合中的所有元素存在着某种顺序关系，这些元素以及元素的顺序关系构成了线性表。线性表的实现：  能够找到首元素。 从任意元素出发可以找到后继元素。  链  表：链表是线性表的一种实现。  链表每个元素存储在独立的存储块当中，称之为结点。 每个结点都有唯一的标识，称之为结点链接。 结点和结点之间通过结点链接维持顺序关系（前一个结点可以通过链接找到后一个结点）。  单向链表单向链">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/linklist/linklist.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/linklist/preinsert.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/linklist/targetappend.png">
+<meta property="og:updated_time" content="2018-03-02T12:06:23.017Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo">
+<meta name="twitter:title" content="linklist">
+<meta name="twitter:description" content="线性表，链表线性表：一个集合中的所有元素存在着某种顺序关系，这些元素以及元素的顺序关系构成了线性表。线性表的实现：  能够找到首元素。 从任意元素出发可以找到后继元素。  链  表：链表是线性表的一种实现。  链表每个元素存储在独立的存储块当中，称之为结点。 每个结点都有唯一的标识，称之为结点链接。 结点和结点之间通过结点链接维持顺序关系（前一个结点可以通过链接找到后一个结点）。  单向链表单向链">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/02/linklist/linklist.png">
 
 
 
@@ -115,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/02/linklist/"/>
 
 
 
 
 
-  <title>hexo</title>
+  <title>linklist | hexo</title>
   
 
 
@@ -140,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,9 +232,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -256,9 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/02/linklist/" itemprop="url">linklist</a></h1>
+          <h1 class="post-title" itemprop="name headline">linklist</h1>
         
 
         <div class="post-meta">
@@ -308,9 +314,7 @@
       
 
       
-        
-          
-            <h3 id="线性表，链表"><a href="#线性表，链表" class="headerlink" title="线性表，链表"></a>线性表，链表</h3><p>线性表：一个集合中的所有元素存在着某种顺序关系，这些元素以及元素的顺序关系构成了线性表。<br>线性表的实现：</p>
+        <h3 id="线性表，链表"><a href="#线性表，链表" class="headerlink" title="线性表，链表"></a>线性表，链表</h3><p>线性表：一个集合中的所有元素存在着某种顺序关系，这些元素以及元素的顺序关系构成了线性表。<br>线性表的实现：</p>
 <ol>
 <li>能够找到首元素。</li>
 <li>从任意元素出发可以找到后继元素。</li>
@@ -364,8 +368,6 @@
 <h4 id="单向链表ADT表示"><a href="#单向链表ADT表示" class="headerlink" title="单向链表ADT表示"></a>单向链表ADT表示</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">ADT LinkList:						<span class="comment">#定义链表</span></span><br><span class="line">	LinkList(self)					<span class="comment">#初始化链表</span></span><br><span class="line">	is_empty(self)					<span class="comment">#判断链表是否为空</span></span><br><span class="line">	size(self)						<span class="comment">#获取链表长度</span></span><br><span class="line">	find(self,target)				<span class="comment">#查找指定元素</span></span><br><span class="line">	prepend(self,item)				<span class="comment">#表首插入</span></span><br><span class="line">	prepop(self)					<span class="comment">#表首删除</span></span><br><span class="line">	append(self,item)				<span class="comment">#表尾插入</span></span><br><span class="line">	pop(self)						<span class="comment">#表尾删除</span></span><br><span class="line">	insert(self,target)				<span class="comment">#一般插入</span></span><br><span class="line">	delete(self,target)				<span class="comment">#一般删除</span></span><br></pre></td></tr></table></figure>
 <h4 id="单向链表的代码实现"><a href="#单向链表的代码实现" class="headerlink" title="单向链表的代码实现"></a>单向链表的代码实现</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span><span class="params">()</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,data,next=None)</span>:</span></span><br><span class="line">		self.data = data</span><br><span class="line">		self.next = next</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LinkListUnderflow</span><span class="params">(ValueError)</span>:</span></span><br><span class="line">	<span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LinkList</span><span class="params">()</span>:</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">		self._head = <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">is_empty</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">return</span> self._head == <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">size</span><span class="params">(self)</span>:</span></span><br><span class="line">	    lenth = <span class="number">0</span></span><br><span class="line">		current = self._head</span><br><span class="line">		<span class="keyword">while</span> current != <span class="keyword">None</span>:</span><br><span class="line">			lenth = lenth + <span class="number">1</span></span><br><span class="line">			current = current.next</span><br><span class="line">		<span class="keyword">return</span> lenth</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">prepend</span><span class="params">(self,data)</span>:</span></span><br><span class="line">		self._head = Node(data,self._head)</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">prepop</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">if</span> self._head = <span class="keyword">None</span>:</span><br><span class="line">			<span class="keyword">raise</span> LinkListUnderflow(<span class="string">"in prepop"</span>)</span><br><span class="line">		data = self._head.data</span><br><span class="line">		self._head = self._head.next</span><br><span class="line">		<span class="keyword">return</span> data</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">append</span><span class="params">(self,data)</span>：</span></span><br><span class="line"><span class="function">		<span class="title">if</span> <span class="title">self</span>.<span class="title">is_empty</span><span class="params">()</span>:</span></span><br><span class="line">			self._head = Node(data,<span class="keyword">None</span>)</span><br><span class="line">			<span class="keyword">return</span> </span><br><span class="line">		current = self._head</span><br><span class="line">		<span class="keyword">while</span> current != <span class="keyword">None</span></span><br><span class="line">			current = current.next</span><br><span class="line">		current.next = Node(data,<span class="keyword">None</span>)</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">pop</span><span class="params">(self)</span>:</span></span><br><span class="line">		<span class="keyword">if</span> self.is_empty():</span><br><span class="line">			<span class="keyword">raise</span> LinkListUnderflow(<span class="string">"in prepop"</span>)</span><br><span class="line">		current = self._head</span><br><span class="line">		<span class="keyword">if</span> current.next == <span class="keyword">None</span>:</span><br><span class="line">			data = current.data</span><br><span class="line">			self._head = <span class="keyword">None</span></span><br><span class="line">			<span class="keyword">return</span> data</span><br><span class="line">		<span class="keyword">while</span> current.next.next != <span class="keyword">None</span></span><br><span class="line">			current = current.next</span><br><span class="line">		data = current.next.data</span><br><span class="line">		current.next = <span class="keyword">None</span></span><br><span class="line">		<span class="keyword">return</span> data</span><br></pre></td></tr></table></figure>
 <h4 id="单向链表操作复杂度"><a href="#单向链表操作复杂度" class="headerlink" title="单向链表操作复杂度"></a>单向链表操作复杂度</h4><h4 id="单向链表的总结"><a href="#单向链表的总结" class="headerlink" title="单向链表的总结"></a>单向链表的总结</h4>
-          
-        
       
     </div>
     
@@ -380,266 +382,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/22/pycharm/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="赫">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/22/pycharm/" itemprop="url">pycharm</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-22T15:20:53+08:00">
-                2018-02-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/python/" rel="tag"># python</a>
           
-            
+            <a href="/tags/链表/" rel="tag"># 链表</a>
           
-
+            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
           
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/</a></p>
-<h3 id="激活1"><a href="#激活1" class="headerlink" title="激活1"></a>激活1</h3><p>激活服务器填入以下内容<br><a href="https://jetlicense.nss.im/" target="_blank" rel="noopener">https://jetlicense.nss.im/</a></p>
-<h3 id="激活2"><a href="#激活2" class="headerlink" title="激活2"></a>激活2</h3><p>修改hosts文件加入以下内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.0.0.0 account.jetbrains.com</span><br></pre></td></tr></table></figure></p>
-<p>激活码填入以下内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EB101IWSWD-eyJsaWNlbnNlSWQiOiJFQjEwMUlXU1dEIiwibGljZW5zZWVOYW1lIjoibGFuIHl1IiwiYXNzaWduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IkZvciBlZHVjYXRpb25hbCB1c2Ugb25seSIsImNoZWNrQ29uY3VycmVudFVzZSI6ZmFsc2UsInByb2R1Y3RzIjpbeyJjb2RlIjoiSUkiLCJwYWlkVXBUbyI6IjIwMTgtMTAtMTQifSx7ImNvZGUiOiJSUzAiLCJwYWlkVXBUbyI6IjIwMTgtMTAtMTQifSx7ImNvZGUiOiJXUyIsInBhaWRVcFRvIjoiMjAxOC0xMC0xNCJ9LHsiY29kZSI6IlJEIiwicGFpZFVwVG8iOiIyMDE4LTEwLTE0In0seyJjb2RlIjoiUkMiLCJwYWlkVXBUbyI6IjIwMTgtMTAtMTQifSx7ImNvZGUiOiJEQyIsInBhaWRVcFRvIjoiMjAxOC0xMC0xNCJ9LHsiY29kZSI6IkRCIiwicGFpZFVwVG8iOiIyMDE4LTEwLTE0In0seyJjb2RlIjoiUk0iLCJwYWlkVXBUbyI6IjIwMTgtMTAtMTQifSx7ImNvZGUiOiJETSIsInBhaWRVcFRvIjoiMjAxOC0xMC0xNCJ9LHsiY29kZSI6IkFDIiwicGFpZFVwVG8iOiIyMDE4LTEwLTE0In0seyJjb2RlIjoiRFBOIiwicGFpZFVwVG8iOiIyMDE4LTEwLTE0In0seyJjb2RlIjoiUFMiLCJwYWlkVXBUbyI6IjIwMTgtMTAtMTQifSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjAxOC0xMC0xNCJ9LHsiY29kZSI6IlBDIiwicGFpZFVwVG8iOiIyMDE4LTEwLTE0In0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDE4LTEwLTE0In1dLCJoYXNoIjoiNjk0NDAzMi8wIiwiZ3JhY2VQZXJpb2REYXlzIjowLCJhdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlLCJpc0F1dG9Qcm9sb25nYXRlZCI6ZmFsc2V9-Gbb7jeR8JWOVxdUFaXfJzVU/O7c7xHQyaidCnhYLp7v32zdeXiHUU7vlrrm5y9ZX0lmQk3plCCsW+phrC9gGAPd6WDKhkal10qVNg0larCR2tQ3u8jfv1t2JAvWrMOJfFG9kKsJuw1P4TozZ/E7Qvj1cupf/rldhoOmaXMyABxNN1af1RV3bVhe4FFZe0p7xlIJF/ctZkFK62HYmh8V3AyhUNTzrvK2k+t/tlDJz2LnW7nYttBLHld8LabPlEEjpTHswhzlthzhVqALIgvF0uNbIJ5Uwpb7NqR4U/2ob0Z+FIcRpFUIAHEAw+RLGwkCge5DyZKfx+RoRJ/In4q/UpA==-MIIEPjCCAiagAwIBAgIBBTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE1MTEwMjA4MjE0OFoXDTE4MTEwMTA4MjE0OFowETEPMA0GA1UEAwwGcHJvZDN5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQC9WZuYgQedSuOc5TOUSrRigMw4/+wuC5EtZBfvdl4HT/8vzMW/oUlIP4YCvA0XKyBaCJ2iX+ZCDKoPfiYXiaSiH+HxAPV6J79vvouxKrWg2XV6ShFtPLP+0gPdGq3x9R3+kJbmAm8w+FOdlWqAfJrLvpzMGNeDU14YGXiZ9bVzmIQbwrBA+c/F4tlK/DV07dsNExihqFoibnqDiVNTGombaU2dDup2gwKdL81ua8EIcGNExHe82kjF4zwfadHk3bQVvbfdAwxcDy4xBjs3L4raPLU3yenSzr/OEur1+jfOxnQSmEcMXKXgrAQ9U55gwjcOFKrgOxEdek/Sk1VfOjvS+nuM4eyEruFMfaZHzoQiuw4IqgGc45ohFH0UUyjYcuFxxDSU9lMCv8qdHKm+wnPRb0l9l5vXsCBDuhAGYD6ss+Ga+aDY6f/qXZuUCEUOH3QUNbbCUlviSz6+GiRnt1kA9N2Qachl+2yBfaqUqr8h7Z2gsx5LcIf5kYNsqJ0GavXTVyWh7PYiKX4bs354ZQLUwwa/cG++2+wNWP+HtBhVxMRNTdVhSm38AknZlD+PTAsWGu9GyLmhti2EnVwGybSD2Dxmhxk3IPCkhKAK+pl0eWYGZWG3tJ9mZ7SowcXLWDFAk0lRJnKGFMTggrWjV8GYpw5bq23VmIqqDLgkNzuoog==</span><br></pre></td></tr></table></figure></p>
-<h3 id="安装vim插件"><a href="#安装vim插件" class="headerlink" title="安装vim插件"></a>安装vim插件</h3><img src="/2018/02/22/pycharm/pycharm-plugin-vim.png">
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/22/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="赫">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/22/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-22T11:49:27+08:00">
-                2018-02-22
-              </time>
+              <a href="/2018/02/22/pycharm/" rel="next" title="pycharm">
+                <i class="fa fa-chevron-left"></i> pycharm
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -649,10 +425,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -660,6 +437,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -680,8 +461,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -732,6 +522,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性表，链表"><span class="nav-number">1.</span> <span class="nav-text">线性表，链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单向链表"><span class="nav-number">2.</span> <span class="nav-text">单向链表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#单向链表的构成"><span class="nav-number">2.1.</span> <span class="nav-text">单向链表的构成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单向链表基本操作"><span class="nav-number">2.2.</span> <span class="nav-text">单向链表基本操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单向链表ADT表示"><span class="nav-number">2.3.</span> <span class="nav-text">单向链表ADT表示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单向链表的代码实现"><span class="nav-number">2.4.</span> <span class="nav-text">单向链表的代码实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单向链表操作复杂度"><span class="nav-number">2.5.</span> <span class="nav-text">单向链表操作复杂度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单向链表的总结"><span class="nav-number">2.6.</span> <span class="nav-text">单向链表的总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -865,6 +671,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
