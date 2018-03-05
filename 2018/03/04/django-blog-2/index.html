@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="python,django," />
 
 
 
@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="django开发环境搭建，linux==ubuntu,python==3.5.2,django==2.0.2">
+<meta name="keywords" content="python,django">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/02/22/hello-world/index.html">
+<meta property="og:title" content="django-blog-2">
+<meta property="og:url" content="http://yoursite.com/2018/03/04/django-blog-2/index.html">
 <meta property="og:site_name" content="hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="django开发环境搭建，linux==ubuntu,python==3.5.2,django==2.0.2">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-22T03:49:27.550Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/04/django-blog-2/regapps.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/04/django-blog-2/mysqlconf.png">
+<meta property="og:updated_time" content="2018-03-04T13:12:17.672Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="django-blog-2">
+<meta name="twitter:description" content="django开发环境搭建，linux==ubuntu,python==3.5.2,django==2.0.2">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/04/django-blog-2/regapps.png">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/22/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/04/django-blog-2/"/>
 
 
 
 
 
-  <title>Hello World | hexo</title>
+  <title>django-blog-2 | hexo</title>
   
 
 
@@ -242,7 +246,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/22/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/04/django-blog-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赫">
@@ -259,7 +263,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">django-blog-2</h1>
         
 
         <div class="post-meta">
@@ -271,8 +275,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-22T11:49:27+08:00">
-                2018-02-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-04T20:02:38+08:00">
+                2018-03-04
               </time>
             
 
@@ -309,15 +313,23 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>django开发环境搭建，linux==ubuntu,python==3.5.2,django==2.0.2<br><a id="more"></a></p>
+<h3 id="基本项目环境"><a href="#基本项目环境" class="headerlink" title="基本项目环境"></a>基本项目环境</h3><h4 id="创建项目和应用"><a href="#创建项目和应用" class="headerlink" title="创建项目和应用"></a>创建项目和应用</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#切换工作目录</span></span><br><span class="line"><span class="built_in">cd</span> ~/django-dev</span><br><span class="line"><span class="comment">#激活虚拟环境</span></span><br><span class="line">. venv/bin/activite</span><br><span class="line"><span class="comment">#创建django项目</span></span><br><span class="line">django-admin startproject mysite</span><br><span class="line"><span class="comment">#创建blog应用</span></span><br><span class="line"><span class="built_in">cd</span> mysite</span><br><span class="line">django-admin startapp blog</span><br></pre></td></tr></table></figure>
+<h4 id="mysite文件"><a href="#mysite文件" class="headerlink" title="mysite文件"></a>mysite文件</h4><p>mysite文件夹是项目管理目录<br>settings.py 项目配置文件，如配置数据库，应用等<br>urls.py     路由配置文件<br>wsgi.py     web服务网关</p>
+<h4 id="blog文件"><a href="#blog文件" class="headerlink" title="blog文件"></a>blog文件</h4><p>admin.py<br>apps.py<br>migrations  管理迁移数据库<br>models.py   数据模型<br>tests.py    测试文件<br>views.py    视图文件</p>
+<h3 id="网站基本配置"><a href="#网站基本配置" class="headerlink" title="网站基本配置"></a>网站基本配置</h3><p>修改settings.py文件配置网站</p>
+<h4 id="注册应用"><a href="#注册应用" class="headerlink" title="注册应用"></a>注册应用</h4><p>应用只有注册才会启用。<br>django默认已添加了很多应用比如admin（后台管理应用）。<br>打开settings.py文件找到 INSTALL_APPS加上blog应用。<br>如图：<br><img src="/2018/03/04/django-blog-2/regapps.png"></p>
+<h4 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h4><p>django支持多种数据库如：oracle,mysql,sqlite等。<br>这里使用mysql数据库。<br>配置参数<br>‘ENGINE’：’django.db.backends.mysql’<br>‘NAME’：数据库名称<br>‘USER’：数据库用户<br>‘PASSWORD’：数据库密码<br>‘HOST’：数据库主机<br>‘PORT’：数据库监听端口<br>如图:<br><img src="/2018/03/04/django-blog-2/mysqlconf.png"><br>ubuntu下安装mysql</p>
+<pre><code class="bash"><span class="comment">#安装mysql</span>
+sudo apt-get install mysql-server
+sudo apt isntall mysql-client
+sudo apt install libmysqlclient-dev
+<span class="comment">#创建数据库并授权</span>
+mysql -uroot -p
+&gt;mysql create database blogtt;
+&gt;mysql grant all privileges on blogtt.* to <span class="string">'blogtt'</span>@<span class="string">'%'</span> identified by <span class="string">'blogtt'</span>;
+&gt;mysql flush privileges;
+</code></pre>
 
       
     </div>
@@ -333,6 +345,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/django/" rel="tag"># django</a>
+          
+        </div>
+      
 
       
       
@@ -342,15 +362,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/03/04/django-start/" rel="next" title="django开发环境搭建">
+                <i class="fa fa-chevron-left"></i> django开发环境搭建
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/22/pycharm/" rel="prev" title="pycharm">
-                pycharm <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -473,7 +493,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本项目环境"><span class="nav-number">1.</span> <span class="nav-text">基本项目环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建项目和应用"><span class="nav-number">1.1.</span> <span class="nav-text">创建项目和应用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysite文件"><span class="nav-number">1.2.</span> <span class="nav-text">mysite文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#blog文件"><span class="nav-number">1.3.</span> <span class="nav-text">blog文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站基本配置"><span class="nav-number">2.</span> <span class="nav-text">网站基本配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注册应用"><span class="nav-number">2.1.</span> <span class="nav-text">注册应用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置数据库"><span class="nav-number">2.2.</span> <span class="nav-text">配置数据库</span></a></li></ol></li></ol></div>
             
 
           </div>
